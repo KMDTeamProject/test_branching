@@ -6,8 +6,8 @@ package git.branching2;
  * @version
  * @since
  */
-public class Door {
+public class Wheel {
 	public String toString() {
-		return "D";
+		return "W";
 	}
 }
