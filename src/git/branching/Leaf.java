@@ -3,7 +3,7 @@ package git.branching;
 /**
  * 
  * @author siddiqui16
- *
+ * @version 0.1
  */
 public class Leaf {
 	public static final int MAX_SIZE = 20;

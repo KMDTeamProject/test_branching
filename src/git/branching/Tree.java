@@ -2,6 +2,11 @@ package git.branching;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author siddiqui16
+ * @version 0.1
+ */
 public class Tree {
 	int height;
 	int stem_width;
