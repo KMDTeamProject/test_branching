@@ -4,7 +4,7 @@ package git.branching;
  * 
  * @author siddiqui16
  * @version 0.12
- *
+ * @version 0.1
  */
 public class Leaf {
 	public static final int MAX_SIZE = 20;
@@ -21,9 +21,8 @@ public class Leaf {
 		Leaf obj = null;
 		if (size < Leaf.MAX_SIZE)
 			obj = new Leaf(_color, _size);
-		else {
+		else
 			throw new Exception("Max leaf size allowed is " + Leaf.MAX_SIZE);
-		}
 		return obj;
 	}
 }
