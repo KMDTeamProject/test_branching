@@ -20,9 +20,8 @@ public class Leaf {
 		Leaf obj = null;
 		if (size < Leaf.MAX_SIZE)
 			obj = new Leaf(_color, _size);
-		else {
+		else
 			throw new Exception("Max leaf size allowed is " + Leaf.MAX_SIZE);
-		}
 		return obj;
 	}
 }

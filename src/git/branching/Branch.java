@@ -21,9 +21,8 @@ public class Branch {
 		Branch obj = null;
 		if (size < Leaf.MAX_SIZE)
 			obj = new Branch(_size);
-		else {
+		else
 			throw new Exception("Max branch size allowed is " + Branch.MAX_SIZE);
-		}
 		return obj;
 	}
 }
