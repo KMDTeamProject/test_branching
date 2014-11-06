@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * 
  * @author siddiqui16
- * @version 0.11
+ * @version 0.12
  */
 public class Tree {
 	int height;
