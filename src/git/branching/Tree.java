@@ -21,4 +21,13 @@ public class Tree {
 	public void addBranch(Branch _b) {
 		branches.add(_b);
 	}
+
+	public String toString() {
+		String str = "Tree";
+		for (Branch b: branches) {
+			String bStr = b.toString();
+			str+="\n\t" + bStr.replace("\n", "\n\t\t");
+		}
+		return str;
+	}
 }

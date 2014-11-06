@@ -17,12 +17,16 @@ public class Leaf {
 		size = _size;
 	}
 
-	public Leaf createLeaf(int _color, int _size) throws Exception {
+	public static Leaf createLeaf(int _color, int _size) throws Exception {
 		Leaf obj = null;
-		if (size < Leaf.MAX_SIZE)
+		if (_size < Leaf.MAX_SIZE)
 			obj = new Leaf(_color, _size);
 		else
 			throw new Exception("Max leaf size allowed is " + Leaf.MAX_SIZE);
 		return obj;
+	}
+	
+	public String toString() {
+		return "Leaf (" + color + "," + size +")";
 	}
 }

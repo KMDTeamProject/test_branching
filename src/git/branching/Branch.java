@@ -23,12 +23,21 @@ public class Branch {
 		leaves.add(_l);
 	}
 
-	public Branch createBranch(int _size) throws Exception {
+	public static Branch createBranch(int _size) throws Exception {
 		Branch obj = null;
-		if (size < Leaf.MAX_SIZE)
+		if (_size < Branch.MAX_SIZE)
 			obj = new Branch(_size);
 		else
 			throw new Exception("Max branch size allowed is " + Branch.MAX_SIZE);
 		return obj;
+	}
+
+	public String toString() {
+		String str = "\nBranch";
+		for (Leaf l : leaves) {
+			String lStr = l.toString();
+			str += "\n\t" + lStr.replace("\n", "\n\t");
+		}
+		return str;
 	}
 }
