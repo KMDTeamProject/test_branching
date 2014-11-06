@@ -10,6 +10,11 @@ public class Branch {
 	
 	protected Branch(int _size) {
 		size = _size;
+		leaves = new ArrayList<Leaf>();
+	}
+	
+	public void addLeaf(Leaf _l) {
+		leaves.add(_l);
 	}
 	
 	public Branch createBranch(int _size) throws Exception {
