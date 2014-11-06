@@ -2,6 +2,11 @@ package git.branching;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author siddiqui16
+ *
+ */
 public class Branch {
 	public static final int MAX_SIZE = 100;
 	
